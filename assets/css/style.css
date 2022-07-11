@@ -1,0 +1,424 @@
+/******** GOOGLE FONTS ********/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/******** RESET ********/
+
+*{
+
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--primary-color);
+
+    text-decoration: none;
+    list-style: none;
+
+}
+
+/******** ROOT ********/
+
+:root{
+
+    --primary-color: #111111;
+    --secundary-color: #5c5c5c20;
+    --background-color: #ffffff;
+}
+
+/******** BODY ********/
+
+body{
+
+    width: 100%;
+    max-width: 768;
+
+    height: 100vh;
+    max-height: 100vh;
+
+}
+
+/******** MENU ********/
+
+.menu {
+
+    width: 100%;
+    height: 80px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--background-color);
+    z-index: 2;
+}
+
+.menu img{
+
+    width: 25px;
+    margin-left: 30px;
+    padding: 13px;
+}
+
+.menu img:hover{
+
+    background-color: var(--secundary-color);
+    padding: 13px;
+    border-radius: 50px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.menu ul {
+
+    width: 85%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.menu ul a{
+
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+#active-link{
+
+    background-color: var(--primary-color);
+
+    width: 9%;
+    height: 48px;
+
+    border-radius: 50px;
+
+    color: var(--background-color);
+    font-weight: 500;
+    font-size: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.menu ul div{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 80%;
+}
+
+.menu ul div input{
+
+    width: 100%;
+    height: 48px;
+
+    background-color: var(--secundary-color);
+
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    
+    padding: 0px 50px;
+    font-size: 1rem;
+}
+
+
+.icon-search{
+
+    position: relative;
+    width: 16px;
+    left: 40px;
+}
+
+.profile-menu{
+
+    width: 10%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.profile-menu a{
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50px;
+}
+
+.profile-menu a:hover{
+
+    background-color: var(--secundary-color);
+    transition: 0.2s;
+}
+
+.profile-menu a h1{
+
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50px;
+
+    font-size: 1rem;
+
+    background-color: var(--secundary-color);
+}
+
+.profile-menu a:hover h1{
+
+    background: none;
+}
+
+.arrow-down{
+
+    width: 1rem;
+}
+
+.menu-mobile{
+
+    display: none;
+}
+
+#navbar, #footerbar, #menu-desk{
+
+    transition:linear 0.3s;
+}
+
+/******** FIGURES ********/
+
+.figures{
+
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    gap: 10px;
+}
+
+.figures li{
+
+    width: 240px;
+    height:max-content;
+    position: relative;
+}
+
+.figures li figure{
+
+    width: 100%;
+    height: 100%;
+    height:max-content;
+}
+
+.figures figcaption section{
+
+    height: min-content;
+}
+
+.figures li figcaption{
+
+    width: 98%;
+    
+    margin-left: 5px;
+    height: max-content;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.figures li figcaption div {
+
+    width: 100%;
+    height:max-content;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.figures li figcaption div h1{
+
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+    font-size: 1rem;
+    background-color: var(--secundary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.figures li figcaption div img{
+
+    width: 30px;
+    height: 30px;
+}   
+
+.figures li figcaption div h3{
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.figures li figcaption section{
+
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.figures li figcaption section p{
+
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.figures img{
+
+    width: 100%;
+    border-radius: 15px;
+}
+
+/******** FOOTER ********/
+
+footer{
+
+    width: 100%;
+    height: 76px;
+
+    display: none;
+    justify-content: center;
+
+    position: fixed;
+    bottom: 0;
+}
+
+.nav-bottom{
+
+    width: 264px;
+    height: 60px;
+
+    background-color: var(--background-color);
+    box-shadow: 0px 0px 10px 0px var(--secundary-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50px;
+}
+
+.nav-bottom li{
+
+    width: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.nav-bottom li p{
+
+    background-color: rgb(189, 3, 3);
+    position: absolute;
+    width: 19.14px;
+    height: 14px;
+    border-radius: 5px;
+    top: -7px;
+    left: 30px;
+    padding: 2px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--background-color);
+}
+
+.nav-bottom li i{
+
+    font-size: 3rem;
+    position: absolute;
+}
+
+
+@media (max-width: 768px){
+
+    .menu{
+
+        display: none;
+    }
+
+    .menu-mobile{
+
+        display: flex;
+
+        width: 100%;
+        height: 80px;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+
+        background-color: var(--background-color);
+
+    }
+
+    .menu-mobile div{
+
+        width: 22%;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .menu-mobile div a{
+
+        font-size: 15px;
+        padding: 10px 0px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .m-active{
+
+        border-bottom: 3px solid var(--primary-color);
+    }
+
+    footer{
+
+        display: flex;
+    }
+}
+
+
+/******** PAGE VIEW ********/
